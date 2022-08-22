@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url('./images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 483px 100vh;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 541px;
+    height: 527px;
+}
+
+.front-card {
+    display: flex;
+    flex-direction: column;
+    width: 447px;
+    height: 245px;
+    background-image: url('./images/bg-card-front.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.front-card img {
+    width: 84px;
+    height: 47px;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.front-card h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    color: white;
+    line-height: 35px;
+    margin-left: 6%;
+    margin-top: 15%;
+    letter-spacing: 3px;
+}
+
+.front-card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.front-card-info h2,
+h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+
+.front-card-info h2 {
+    margin-left: 7%;
+}
+
+.front-card-info h3 {
+    margin-right: 9%;
+}
+
+.back-card {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 447px;
+    height: 245px;
+    background-image: url('./images/bg-card-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+}
+
+.back-card h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    color: white;
+    margin-right: 13%;
+    margin-bottom: 15px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 381px;
+    height: 352px;
+    border: 1px solid red;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exp-date {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+
+.date-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-vc {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: #21092F;
+    padding-bottom: 2%;
+}
+
+.name-container input {
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #DFDEE0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #21092F;
+}
+
+.cn-container input {
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #DFDEE0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #21092F;
+}
+
+.date-info input {
+    width: 80px;
+    height: 45px;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    border: 1px solid #DFDEE0;
+}
+
+.card-vc input {
+    width: 151px;
+    height: 45px;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    border: 1px solid #DFDEE0;
+}
+
+button {
+    margin-top: auto;
+    width: 100%;
+    border: none;
+    height: 53px;
+    border-radius: 8px;
+    background-color: #21092F;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: #cdcdcd;
+    padding-left: 5%;
+}
+
+input:focus {
+    /*outline: none;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #6348FE #610595;*/
+    outline: none;
+    border: double 1px transparent;
+    border-radius: 8px;
+    background-image: linear-gradient(white, white),
+        linear-gradient(to right, #6348FE, #610595);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #FF5050; 
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: #21092F;
+    padding-bottom: 2%;
+    margin-top: 3%;
+}
+
+input::placeholder {
+    color: #cdcdcd;
+    padding-left: 5%;
+}
+
+
+form #card-hn,
+#card-number {
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #DFDEE0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #21092F;
+}
+
+.back-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exp-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-vc {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-vc input {
+    width: 191px;
+    height: 45px;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    border: 1px solid #DFDEE0;
+}
+
+.date-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.date-info input {
+    width: 80px;
+    height: 45px;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    border: 1px solid #DFDEE0;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(0deg, rgba(99,72,254,1) 0%, rgba(97,5,149,1) 100%);
+    border-image-slice: 1;
+}*/
