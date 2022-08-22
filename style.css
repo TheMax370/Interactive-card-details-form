@@ -99,7 +99,7 @@ h3 {
 .form-container {
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 22px;
     width: 381px;
     height: 352px;
     border: 1px solid red;
@@ -229,6 +229,10 @@ p {
     line-height: 15px;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.thank-you {
+    /*display: none;*/
 }
 
 /*form {
