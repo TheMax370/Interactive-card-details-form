@@ -249,8 +249,64 @@ p {
     color: #8F8694;
     font-size: 18px;
     line-height: 22px;
+    
 }
 
 @media only screen and (min-width: 320px) and (max-width: 900px) {
-    
+    body {
+        background-image: url('./images/bg-main-mobile.png');
+        background-size: 100% 30%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .card-container {
+        width: auto;
+        height: 180px;
+        justify-content: normal;
+        align-items: center;
+    }
+
+    .front-card {
+        width: 285px;
+        height: 157px;
+        z-index: 2;
+        margin-bottom: -150px;
+        margin-right: 100px;
+    }
+
+    .front-card img {
+        width: 54px;
+        height: 30px;
+    }
+
+    .front-card h1 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .front-card-info h2, h3 {
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .back-card {
+        width: 286px;
+        height: 157px;
+        margin: 0;
+        margin-top: -100px;
+        margin-left: 100px;
+        z-index: 1;
+    }
+
+    .back-card h1 {
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .form-container {
+        width: auto;
+    }
 }
