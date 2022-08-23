@@ -105,13 +105,16 @@ button.addEventListener('click', event => {
         document.getElementById('error-cvc').innerHTML = 'Wrong format, 3-4 digits only ';
     }
 
+    //window.location.reload(true);
+
+
     if (resultName === true && resultNum === true && monthResult === true && yearResult === true && cardCVCResult === true) {
-        cardHolderName.style.display = 'none';
-        cardNumber.style.display = 'none';
-        cardMonth.style.display = 'none';
-        cardYear.style.display = 'none';
-        cardCVC.style.display = 'none';
-        
+        document.querySelector('.name-container').style.display = 'none';
+        document.querySelector('.cn-container').style.display = 'none';
+        document.querySelector('.date-container').style.display = 'none';
+        document.querySelector('.thank-you').style.display = 'flex';
+        document.getElementById('button').innerHTML = 'Continue';
+
     }
 
 })
