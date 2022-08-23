@@ -11,6 +11,8 @@ let cardYear = document.getElementById('year');
 let cardCVC = document.getElementById('cvc');
 
 let button = document.getElementById('button');
+let click = 0;
+
 
 cardHolderName.addEventListener('keyup', event => {
     mockName.innerHTML = cardHolderName.value;
@@ -107,6 +109,10 @@ button.addEventListener('click', event => {
 
     //window.location.reload(true);
 
+    if (click === 2) {
+        window.location.reload(true);
+    }
+
 
     if (resultName === true && resultNum === true && monthResult === true && yearResult === true && cardCVCResult === true) {
         document.querySelector('.name-container').style.display = 'none';
@@ -114,7 +120,7 @@ button.addEventListener('click', event => {
         document.querySelector('.date-container').style.display = 'none';
         document.querySelector('.thank-you').style.display = 'flex';
         document.getElementById('button').innerHTML = 'Continue';
-
+        click += 1;
     }
 
 })
