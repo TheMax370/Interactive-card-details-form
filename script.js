@@ -107,9 +107,7 @@ button.addEventListener('click', event => {
         document.getElementById('error-cvc').innerHTML = 'Wrong format, 3-4 digits only ';
     }
 
-    //window.location.reload(true);
-
-    if (click === 2) {
+    if (click === 1) {
         window.location.reload(true);
     }
 
